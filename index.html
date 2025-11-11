@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton-Raphson Solver</title>
+    <!--Link Style-->
+    <link href="style.css" rel="stylesheet">
+    <!--Link BootStrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body style="background-color: #f6f8ff; font-family:inter;">
+    
+    <!--Start header home section-->
+    
+    <header class="header-home">
+        <h1>Solution of nonlinear equation<br>Newton-Raphson Method</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h3>Instruction!</h3>
+                    <p>To write "x" Power n , We use the symbol "x^n", not "x`n"</p>
+                    <form action="index.html" onsubmit="return NewtonRaphson();">
+                        <input type="text" name="EqStr" id="EqStr" placeholder="enter the equation" class="form-control my-3">
+                        <input type="text" name="initial-guess" id="initial-guess" placeholder="enter the initial guess" class="form-control my-3">
+                        <h5 id="Convergence-result"></h5>
+                        <input type="submit" value="Calculate" class="btn btn-primary btn-block">
+                    </form>
+                    <button type="button" onclick="checkConvergence();" class="btn btn-warning btn-block mt-2">Check the initial guess</button>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <table class="table table-striped table-bordered mt-3">
+                        <thead>
+                            <tr>
+                                <th>i</th>
+                                <th>(xi)</th>
+                          </tr>
+                        </thead>
+                        <tbody id="steps-table">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--End header home section-->
+
+
+    <!--math js library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.js"></script>
+    <!--Link Js-->
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Start header home section*/
+
+.header-home h1{
+    text-align: center;
+    margin-top: 30px;
+    color: blue;
+}
+
+.guaranteed{
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: all 1s linear;
+}
+
+.not-guaranteed{
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: all 1s linear;
+
+}
+/* End header home section*/
